@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Animated Survey</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="animatedSurvey.js"></script>
+    <link rel="stylesheet" href="animatedSurvey.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="parent-fieldname-title" class="documentFirstHeading">
+                    Animated Survey
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin rhoncus lorem a commodo. Praesent
+                    vestibulum eget eros sit amet ullamcorper. Sed varius ipsum risus. Phasellus at lorem tincidunt, molestie
+                    nulla a, hendrerit risus. Nam id nunc mi. Ut molestie eget enim eget mollis. Fusce aliquam vehicula facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin rhoncus lorem a commodo.
+                    Praesent vestibulum eget eros sit amet ullamcorper. Sed varius ipsum risus. Phasellus at lorem tincidunt,
+                    molestie nulla a, hendrerit risus. Nam id nunc mi. Ut molestie eget enim eget mollis. Fusce aliquam vehicula
+                    facilisis.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin rhoncus lorem a commodo. Praesent
+                    vestibulum eget eros sit amet ullamcorper. Sed varius ipsum risus. Phasellus at lorem tincidunt, molestie
+                    nulla a, hendrerit risus. Nam id nunc mi. Ut molestie eget enim eget mollis. Fusce aliquam vehicula facilisis.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="boxSurvey">
+                    <div class="barraProgresso">
+                        <div class="infoQtdPerguntas">Question <span class="actualQuestionNumber">1</span>/<span class="countQuestionsNumber">1</span></div>
+                        <div class="barraProgressoFundo">
+                            <div class="barraProgressoPreenchido"></div>
+                        </div>
+                    </div>
+                    <div class="boxPerguntas">
+                        <div class="itemPergunta">
+                            <h1 class="perguntaSurvey">Table</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin rhoncus lorem a commodo.
+                                Praesent vestibulum eget eros sit amet ullamcorper. </p>
+                            <div class="campoResposta form-inline">
+                                <table class="complexTableSurvey table table-striped">
+                                    <tr>
+                                        <th></th>
+                                        <th>Bad</th>
+                                        <th>Good</th>
+                                        <th>Very Good</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="titleRow">Cleaning</td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titleRow">Rooms</td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2"></td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2"></td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="titleRow">Parking</td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3"></td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3"></td>
+                                        <td class="inputRadio"><input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="botoesNavegacao">
+                                <button class="prevQuestion btn btn-success buttonEnabled">Previous</button>
+                                <button class="nextQuestion btn btn-success buttonEnabled">Next</button>
+                            </div>
+                        </div>
+                        <div class="itemPergunta">
+                            <h1 class="perguntaSurvey">Text Input</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin rhoncus lorem a commodo.
+                                Praesent vestibulum eget eros sit amet ullamcorper. </p>
+                            <div class="campoResposta form-inline">
+                                <input class="form-control" type="text" size="50" placeholder="Text here">
+                            </div>
+                            <div class="botoesNavegacao">
+                                <button class="prevQuestion btn btn-success buttonEnabled">Previous</button>
+                                <button class="nextQuestion btn btn-success buttonEnabled">Next</button>
+                            </div>
+                        </div>
+                        <div class="itemPergunta">
+                            <h1 class="perguntaSurvey">Radio</h1>
+                            <div class="campoResposta form-inline">
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Radio Item
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Radio Item
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Radio Item
+                                </label>
+                            </div>
+                            <div class="botoesNavegacao">
+                                <button class="prevQuestion btn btn-success buttonEnabled">Previous</button>
+                                <button class="nextQuestion btn btn-success buttonEnabled">Next</button>
+                            </div>
+                        </div>
+                        <div class="itemPergunta">
+                            <h1 class="perguntaSurvey">Ckeckbox</h1>
+                            <div class="campoResposta form-inline">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Ckeckbox Item
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Ckeckbox Item
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox3" value="option3"> Ckeckbox Item
+                                </label>
+                            </div>
+                            <div class="botoesNavegacao">
+                                <button class="prevQuestion btn btn-success buttonEnabled">Previous</button>
+                                <button class="nextQuestion btn btn-success buttonEnabled">Next</button>
+                            </div>
+                        </div>
+                        <div class="itemPergunta">
+                            <h1 class="perguntaSurvey">Select</h1>
+                            <div class="campoResposta form-inline">
+                                <select class="form-control">
+                                    <option>Select item</option>
+                                    <option>Select item 2</option>
+                                    <option>Select item 3</option>
+                                    <option>Select item 4</option>
+                                    <option>Select item 5</option>
+                                </select>
+                            </div>
+                            <div class="botoesNavegacao">
+                                <button class="prevQuestion btn btn-success buttonEnabled">Previous</button>
+                                <button class="nextQuestion btn btn-success buttonEnabled">Next</button>
+                                <button class="endSurvey btn btn-success buttonEnabled">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

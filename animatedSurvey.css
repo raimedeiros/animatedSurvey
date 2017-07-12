@@ -1,0 +1,85 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.boxSurvey{
+    border:1px solid #d3d3d3;
+    padding:50px;
+    overflow: hidden;
+}
+
+.infoQtdPerguntas{
+    text-align:center;
+    margin-bottom:10px;
+    font-size:1.2em;
+}
+.barraProgressoFundo{
+    background-color:#d3d3d3;
+    width:100%;
+    height:10px;
+    border-radius:5px;
+    margin-bottom:30px;
+}
+
+.barraProgressoPreenchido{
+    background-color:#3a6a4f;
+    height:10px;
+    border-radius:5px;
+}
+
+.perguntaSurvey{
+    color:#4f4f4f;
+    font-size: 2em;
+}
+input[type=text]{
+    height:30px;
+}
+select{
+    width: 100%;
+}
+.botoesNavegacao{
+    text-align: center;
+}
+.btn.btn-success{
+    margin:50px 20px 10px 20px;
+    padding: 5px 50px;
+    width:200px;
+}
+.btn.buttonEnabled{
+    background-image: linear-gradient(to bottom,#3a6a4f 0,#276C4D 100%);
+}
+.btn.endSurvey{
+    background-image: linear-gradient(to bottom,#0277BD 0,#01579B 100%);
+    border-color:#01579B;
+}
+button.btn.btn-success.buttonDisabled, 
+button.btn.btn-success.buttonDisabled:hover,
+button.btn.btn-success.buttonDisabled:active,
+button.btn.btn-success.buttonDisabled:focus{
+    background-color: lightgray;
+    background-image: none;
+    border-color: gray;
+    color: gray;
+}
+button.btn.btn-success:focus, button.btn.btn-success:hover {
+    background-color: #276C4D;
+}
+
+.boxPerguntas .itemPergunta{
+    position: relative;
+}
+.boxPerguntas .itemPergunta:not(:first-of-type) {
+	display: none;
+    opacity: 0;
+    left:100%;
+}
+
+table{
+    table-layout: fixed;
+}
+
+.table .inputRadio, .table th{
+    text-align: center;
+}
+.table .titleRow{
+    font-weight: 600;
+}
