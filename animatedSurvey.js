@@ -12,32 +12,32 @@ $(document).ready(function () {
     }
 
     function configureItemsStatic() {
-        $(".itemPergunta:last").append("<div class='botoesNavegacao'>\
+        $(".itemQuestion:last").append("<div class='navButtons'>\
             <button class='endSurvey btn btn-success buttonEnabled'>Done</button></div>");
     }
     function configureItemsSlide() {
-        $(".itemPergunta").append("<div class='botoesNavegacao'>\
+        $(".itemQuestion").append("<div class='navButtons'>\
             <button class='prevQuestion btn btn-success buttonEnabled'>Previous</button>\
             <button class='nextQuestion btn btn-success buttonEnabled'>Next</button></div>");
-        $(".itemPergunta:last .botoesNavegacao").append("<button type='submit'class='endSurvey btn btn-success buttonEnabled'>Done</button>");
+        $(".itemQuestion:last .navButtons").append("<button type='submit'class='endSurvey btn btn-success buttonEnabled'>Done</button>");
         beginSlider();
     }
 
     function beginSlider() {
         //Config actions
-        begin = $(".itemPergunta:first button.prevQuestion");
-        end = $(".itemPergunta:last button.nextQuestion");
+        begin = $(".itemQuestion:first button.prevQuestion");
+        end = $(".itemQuestion:last button.nextQuestion");
 
         $(begin).removeClass("buttonEnabled");
         $(begin).addClass("buttonDisabled");
         $(end).removeClass("buttonEnabled");
         $(end).hide();
 
-        countQuestions = $(".itemPergunta").length;
+        countQuestions = $(".itemQuestion").length;
         sizeQuestion = 100 / countQuestions;
         sizeQuestionUpdate = sizeQuestion;
         $(".countQuestionsNumber").html(countQuestions);
-        $(".barraProgressoPreenchido").css("width", sizeQuestionUpdate + "%");
+        $(".progressBarFilling").css("width", sizeQuestionUpdate + "%");
         console.log(countQuestions, sizeQuestion);
 
         $(".nextQuestion").click(function () {
@@ -48,7 +48,7 @@ $(document).ready(function () {
             nextQuestion = $(currentQuestion).next();
             hideThisQuestion(direction = "left", currentQuestion, nextQuestion);
             sizeQuestionUpdate = sizeQuestionUpdate + sizeQuestion;
-            $(".barraProgressoPreenchido").css("width", sizeQuestionUpdate + "%");
+            $(".progressBarFilling").css("width", sizeQuestionUpdate + "%");
             actualQuestionNumber = $(".actualQuestionNumber").html();
             $(".actualQuestionNumber").html(parseInt(actualQuestionNumber) + 1);
         });
@@ -60,7 +60,7 @@ $(document).ready(function () {
             nextQuestion = $(currentQuestion).prev();
             hideThisQuestion(direction = "right", currentQuestion, nextQuestion);
             sizeQuestionUpdate = sizeQuestionUpdate - sizeQuestion;
-            $(".barraProgressoPreenchido").css("width", sizeQuestionUpdate + "%");
+            $(".progressBarFilling").css("width", sizeQuestionUpdate + "%");
             actualQuestionNumber = $(".actualQuestionNumber").html();
             $(".actualQuestionNumber").html(parseInt(actualQuestionNumber) - 1);
         });
