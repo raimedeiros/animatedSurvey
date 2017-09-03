@@ -22,6 +22,7 @@ Keep class "enableSlider" to use animation. Remove it for a simple form.
         <div class="itemQuestion"></div>
     </div>
 </div>
+``` 
 
 ## AUTHOR
  **[Rai Medeiros](https://github.com/RaiMedeiros)** 
