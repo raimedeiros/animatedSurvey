@@ -4,7 +4,7 @@ A responsive slider to be used with forms of questions and answers. The animatio
 This slider uses bootstrap, be sure to change the path to your bootstrap files.
 
 ## USAGE
-Keep class enableSlider to use animation. Remove it for a simple form.
+Keep class "enableSlider" to use animation. Remove it for a simple form.
 
 ```html
 <div class="boxSurvey enableSlider">
@@ -22,3 +22,6 @@ Keep class enableSlider to use animation. Remove it for a simple form.
         <div class="itemQuestion"></div>
     </div>
 </div>
+
+## AUTHOR
+ **[Rai Medeiros](https://github.com/RaiMedeiros)** 
